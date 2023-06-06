@@ -1,0 +1,42 @@
+body {
+    background-image: url("/images/background.jpg");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-color: #77B4D1ff;
+  }
+  
+  
+  div {
+    padding: 20px;
+    margin-top: 45px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #EF5B01ff;
+  }
+  
+  h4 {
+  text-align: left;
+  color: #2F444Dff;
+  }
+  
+  h3 {
+    text-align: left;
+    color: #2F444Dff;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #EF5B01ff;
+    }
+  
+    .labelcolor
+    {
+      color: #C8C9C9ff;
+    }
+  
+    li
+    {
+      color: rgb(60, 63, 65);
+    }
