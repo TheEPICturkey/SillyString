@@ -71,13 +71,15 @@ namespace Factory.Controllers
   
     public ActionResult Edit(int id)
     {
-      Machine thisMachine = _db.Machines.FirstOrDefault(machines => machines.MachineId == id);
+      Machine thisMachine = _db.Machines.FirstOrDefault(machine => machine.MachineId == id);
+      ViewBag.EngineerId = new SelectList(_db.Engineers, "EngineerId", "Name");
       return View(thisMachine);
     }
 
     [HttpPost]
     public ActionResult Edit(Machine machine)
     {
+      _db.SaveChanges();
       _db.Machines.Update(machine);
       _db.SaveChanges();
       return RedirectToAction("Index");
